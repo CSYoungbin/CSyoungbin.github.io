@@ -1,28 +1,44 @@
-title:              Clean Blog
-email:              your-email@example.com
-description:        A Blog Theme by Start Bootstrap
-author:             Start Bootstrap
+title:              Youngbin's Blog
+email:              youngbin567@gmail.com
+description:        A lazy CS studnet studying deligently to become an promising apprentice
+author:             Youngbin Ha
 # baseurl:            "/startbootstrap-clean-blog-jekyll"
-url:                "https://startbootstrap.github.io"
+url:                "https://csyoungbin.github.io"
 
 # Social Profiles
-twitter_username:   SBootstrap
-github_username:    StartBootstrap
-facebook_username:  StartBootstrap
+twitter_username:   
+github_username:    CSYoungbin
+facebook_username:  
 instagram_username:  
-linkedin_username:
+linkedin_username: Youngbin Ha
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
-paginate:           5
-paginate_path:      "/posts/page:num/"
+# paginate:           5
+# paginate_path:      "/posts/page:num/"
+
+permalink: /:year/:month/
+pagination:
+  enabled: true
+  per_page: 12
+  sort_reverse: true
+  sort_field: 'date'
+  title: ':title'
+  trail:
+    before: 2
+    after: 2
+
 plugins:
   - jekyll-feed
   - jekyll-paginate
   # - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+  - jekyll-polyglot
+  - jekyll-seo-tag
+  - jekyll-paginate-v2
+
 
 languages: ["en", "ko"]
 default_lang: "en"
